@@ -5,6 +5,7 @@
   "authors": [
     "Adler Parnas <eu@adlerparnas.com>"
   ],
+  "main": "dist/ng-questrade-webapi.min.js",
   "description": "AngularJS service to connet to Questrade WebAPI",
   "keywords": [
     "AngularJS",

@@ -19,8 +19,8 @@ describe('Service: IQWebAPI', function() {
 
 	beforeEach(inject(function(_$httpBackend_, iqWebAPIService) {
 		$httpBackend = _$httpBackend_;
-		$httpBackend.when('POST', LOGIN_URL).respond(mockedAcessResponse)
-		$httpBackend.when('GET', mockedAcessResponse.api_server + '/accounts').respond({})
+		$httpBackend.when('POST', LOGIN_URL).respond(mockedAcessResponse);
+		$httpBackend.when('GET', mockedAcessResponse.api_server + '/accounts').respond({});
 
 		service = iqWebAPIService;
 	}));
@@ -36,7 +36,7 @@ describe('Service: IQWebAPI', function() {
 			$http = _$http_;
 			spyOn($http, 'post').and.callThrough();
 			spyOn($http, 'get').and.callThrough();
-		}))
+		}));
 
 		it('should request the access token before do any request', inject(function($http) {
 			service.get('accounts');
