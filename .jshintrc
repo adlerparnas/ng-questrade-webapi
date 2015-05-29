@@ -1,0 +1,31 @@
+{
+	"quotmark": "single",
+	"indent": 4,
+	"smarttabs": true,
+	"trailing": true,
+	"latedef": "nofunc",
+	"curly": true,
+	"undef": true,
+	"browser": true,
+	"node": true,
+	"jquery": true,
+	"unused": true,
+		"globals": {
+			"angular": false,
+			"jasmine": false,
+			"describe": false,
+			"it": false,
+			"expect": false,
+			"beforeEach": false,
+			"beforeAll": false,
+			"afterEach": false,
+			"afterAll": false,
+			"spyOn": false,
+			"inject": false,
+			"module": false,
+
+			"element": true,
+			"by": true,
+			"browser": true
+		}
+}
