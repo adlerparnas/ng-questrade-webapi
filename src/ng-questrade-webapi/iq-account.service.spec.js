@@ -4,13 +4,13 @@ describe('Service: iqAccountService', function() {
 	var $rootScope;
 	var iqWebAPIService, iqAccountService;
 	var mockedAccounts = {
-		type: "Margin",	
-		number: "26598145",
-		status: "Active",
+		type: 'Margin',	
+		number: '26598145',
+		status: 'Active',
 		isPrimary: true,
 		isBilling: true,
-		clientAccountType: "Individual"
-	}
+		clientAccountType: 'Individual'
+	};
 
 	beforeEach(module('ngQuestradeWebAPI', 'ngMock'));
 
@@ -45,7 +45,7 @@ describe('Service: iqAccountService', function() {
 
 			function _checkMethod(obj, method) {
 				expect(obj[method]).toBeDefined();
-				expect(typeof(obj[method])).toEqual("function");
+				expect(typeof(obj[method])).toEqual('function');
 			}
 
 			iqAccountService.getAccounts().then(function(accounts) {
